@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHAD OS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-blur"></div>
+
+    <header>
+        <h1 class="logo">⚡ CHAD OS</h1>
+        <div id="clock"></div>
+    </header>
+
+    <section class="hero">
+        <h2>Upgrade Your Mindset.</h2>
+        <p>Build. Dominate. Repeat.</p>
+        <button id="enterBtn">ENTER SYSTEM</button>
+    </section>
+
+    <section class="dashboard hidden">
+        <div class="card">
+            <h3>Mission Board</h3>
+            <div class="task-input">
+                <input type="text" id="taskInput" placeholder="Enter your mission...">
+                <button onclick="addTask()">ADD</button>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="card stats">
+            <h3>System Stats</h3>
+            <div class="stat">
+                <span id="taskCount">0</span>
+                <p>Missions</p>
+            </div>
+            <div class="stat">
+                <span id="focusLevel">100</span>
+                <p>Focus %</p>
+            </div>
+        </div>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
